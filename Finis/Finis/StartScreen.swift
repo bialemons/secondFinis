@@ -34,7 +34,7 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate,UITableViewDataSo
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red: 78.0/255, green: 205.0/255, blue: 196.0/255, alpha: 1.0)]
         
         //Fundo da Navigation Controller
-        //navigationController!.navigationBar.barTintColor = UIColor.blueColor()
+        navigationController!.navigationBar.barTintColor = UIColor(red: 242/255, green: 242/255, blue: 242/255, alpha: 1.0)
         
         //tasks += [ "DESIGN INTERFACE","CLEAN MESSY ROOM","WATCH DAREDEVIL","EAT VEGETABLES","PAY BILLS","REPLY EMAILS"]
         

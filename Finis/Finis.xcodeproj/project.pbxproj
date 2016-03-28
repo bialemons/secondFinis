@@ -10,6 +10,7 @@
 		243298671CA99BA100C4B13E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56F6E8771CA05ED00093477E /* Info.plist */; };
 		24E1901B1CA9BBC2004E81A5 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E1901A1CA9BBC2004E81A5 /* KeyboardViewController.swift */; };
 		5412AA7D1CA9C04E000E520E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5412AA7C1CA9C04E000E520E /* Task.swift */; };
+		5412AA7F1CA9C323000E520E /* Reschedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5412AA7E1CA9C323000E520E /* Reschedule.swift */; };
 		541FFAA81CA45755000D1B79 /* Montserrat-Hairline.otf in Resources */ = {isa = PBXBuildFile; fileRef = 541FFAA01CA45755000D1B79 /* Montserrat-Hairline.otf */; };
 		541FFAA91CA45755000D1B79 /* Montserrat-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 541FFAA11CA45755000D1B79 /* Montserrat-Light.otf */; };
 		541FFAAA1CA45755000D1B79 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 541FFAA21CA45755000D1B79 /* Montserrat-Regular.otf */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		24E1901A1CA9BBC2004E81A5 /* KeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 		5412AA7C1CA9C04E000E520E /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		5412AA7E1CA9C323000E520E /* Reschedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reschedule.swift; sourceTree = "<group>"; };
 		541FFAA01CA45755000D1B79 /* Montserrat-Hairline.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Hairline.otf"; sourceTree = "<group>"; };
 		541FFAA11CA45755000D1B79 /* Montserrat-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.otf"; sourceTree = "<group>"; };
 		541FFAA21CA45755000D1B79 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				56F6E86F1CA05ED00093477E /* Main.storyboard */,
 				56F6E8741CA05ED00093477E /* LaunchScreen.storyboard */,
 				56F6E8771CA05ED00093477E /* Info.plist */,
+				5412AA7E1CA9C323000E520E /* Reschedule.swift */,
 				56F6E87D1CA082860093477E /* User.swift */,
 				5412AA7C1CA9C04E000E520E /* Task.swift */,
 				56F6E87F1CA084DA0093477E /* Register.swift */,
@@ -205,6 +208,7 @@
 				56F6E8821CA09FBD0093477E /* StartScreen.swift in Sources */,
 				56F6E8841CA0A00E0093477E /* Login.swift in Sources */,
 				56BA774C1CA927E200DA7D8F /* TableViewCell.swift in Sources */,
+				5412AA7F1CA9C323000E520E /* Reschedule.swift in Sources */,
 				24E1901B1CA9BBC2004E81A5 /* KeyboardViewController.swift in Sources */,
 				56F6E8801CA084DA0093477E /* Register.swift in Sources */,
 				56F6E87E1CA082860093477E /* User.swift in Sources */,

@@ -18,5 +18,5 @@ class Task  {
         self.name = name
         self.date = date
         self.tag = tag
-    }    
+    }
 }
