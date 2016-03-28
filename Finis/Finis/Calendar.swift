@@ -13,6 +13,8 @@ class Calendar: NSDate {
     let dateComponents = NSDateComponents()
     let currentDate = NSDate()
     
+    
+    // qualquer coisa
 }
 
 
