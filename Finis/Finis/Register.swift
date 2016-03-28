@@ -18,12 +18,12 @@ class Register: KeyboardViewController, UITextFieldDelegate {
     var user: User!
 
     //arthur_array do bg
-    //var images = ["bg1", "bg2", "bg3", "bg4"]
-    //var previousRandomIndex = 0
+    var images = ["bg1", "bg2", "bg3", "bg4"]
+    var previousRandomIndex = 0
     
     
     //arthur_background aleatorio
-    /*func randomImages () -> String {
+    func randomImages () -> String {
         
         let unsignedArrayCount = UInt32(images.count)
         let unsignedRandomNumber = arc4random_uniform(unsignedArrayCount)
@@ -34,11 +34,7 @@ class Register: KeyboardViewController, UITextFieldDelegate {
         } while randomNumber == previousRandomIndex
         
         return images[randomNumber]
-    }*/
-    
-    
-    
-    
+    }
     
     
     
