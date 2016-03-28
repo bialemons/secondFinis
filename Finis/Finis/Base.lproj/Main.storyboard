@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="j8e-bE-bfh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CRZ-Cd-VBv">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -680,6 +680,15 @@
                                     <segue destination="Ysu-Mn-gaP" kind="show" id="VBM-bI-XAl"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5E-EQ-17d">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="84" y="86" width="197" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -696,6 +705,7 @@
                                 <exclude reference="NpL-rg-hcI"/>
                                 <exclude reference="Dim-XL-8GC"/>
                                 <exclude reference="Atj-Wk-tBP"/>
+                                <exclude reference="t5E-EQ-17d"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="9N1-aJ-LTJ"/>
@@ -712,6 +722,7 @@
                                 <include reference="NpL-rg-hcI"/>
                                 <include reference="Dim-XL-8GC"/>
                                 <include reference="Atj-Wk-tBP"/>
+                                <include reference="t5E-EQ-17d"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="9N1-aJ-LTJ"/>
@@ -729,6 +740,7 @@
                         <outlet property="insertGoal" destination="MuB-rw-dbU" id="LPF-TE-2Ty"/>
                         <outlet property="tableView" destination="1Nn-FY-AKq" id="BMK-9w-Gwz"/>
                         <outlet property="tag" destination="ycF-Qy-aU1" id="sTC-WH-Spz"/>
+                        <outlet property="todayLabel" destination="t5E-EQ-17d" id="Z4l-9S-Z1B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rxI-D4-L8b" userLabel="First Responder" sceneMemberID="firstResponder"/>

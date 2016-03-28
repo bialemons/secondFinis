@@ -17,7 +17,7 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate,UITableViewDataSo
     @IBOutlet weak var addGoal: UITextField!
     @IBOutlet weak var insertGoal: UITextField!
     @IBOutlet weak var imageView: UIImageView!
-    var todayLabel: UILabel!
+    @IBOutlet var todayLabel: UILabel!
     
     //var tasks: NSMutableArray! = NSMutableArray()
     var tasks: [String] = [ "DESIGN INTERFACE", "CLEAN MESSY ROOM", "WATCH DAREDEVIL", "EAT VEGETABLES", "PAY BILLS", "REPLY EMAILS"]
@@ -25,18 +25,20 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate,UITableViewDataSo
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        dateLabel.text = currentDate
-        
+        // label que mostra a data do dia
+        todayLabel.text = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: NSDateFormatterStyle.MediumStyle, timeStyle: NSDateFormatterStyle.ShortStyle)
+
+            
         tag.hidden = true
         insertGoal.hidden = true
         addGoal.textColor = UIColor.clearColor()
         
-        navigationController!.navigationBar.tintColor = UIColor(red: 78.0/255, green: 205.0/255, blue: 196.0/255, alpha: 1.0)
+//        navigationController!.navigationBar.tintColor = UIColor(red: 78.0/255, green: 205.0/255, blue: 196.0/255, alpha: 1.0)
 
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red: 78.0/255, green: 205.0/255, blue: 196.0/255, alpha: 1.0)]
         
         //Fundo da Navigation Controller
-        navigationController!.navigationBar.barTintColor = UIColor(red: 242/255, green: 242/255, blue: 242/255, alpha: 1.0)
+//        navigationController!.navigationBar.barTintColor = UIColor(red: 242/255, green: 242/255, blue: 242/255, alpha: 1.0)
         
         //tasks += [ "DESIGN INTERFACE","CLEAN MESSY ROOM","WATCH DAREDEVIL","EAT VEGETABLES","PAY BILLS","REPLY EMAILS"]
         
