@@ -16,6 +16,7 @@
 		541FFAAA1CA45755000D1B79 /* Montserrat-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 541FFAA21CA45755000D1B79 /* Montserrat-Regular.otf */; };
 		541FFAAB1CA45755000D1B79 /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 541FFAA31CA45755000D1B79 /* Montserrat-SemiBold.otf */; };
 		541FFAAC1CA45755000D1B79 /* Montserrat-UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 541FFAA41CA45755000D1B79 /* Montserrat-UltraLight.otf */; };
+		548C24C31CA9E23A00AE8645 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548C24C21CA9E23A00AE8645 /* Calendar.swift */; };
 		54A0BD891CA6396000DBC838 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A0BD881CA6396000DBC838 /* Assets.xcassets */; };
 		565029D51CA8023E00EDF053 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565029D41CA8023E00EDF053 /* Profile.swift */; };
 		56BA77481CA9048200DA7D8F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BA77471CA9048200DA7D8F /* Item.swift */; };
@@ -40,6 +41,7 @@
 		541FFAA21CA45755000D1B79 /* Montserrat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.otf"; sourceTree = "<group>"; };
 		541FFAA31CA45755000D1B79 /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
 		541FFAA41CA45755000D1B79 /* Montserrat-UltraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-UltraLight.otf"; sourceTree = "<group>"; };
+		548C24C21CA9E23A00AE8645 /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		54A0BD881CA6396000DBC838 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		565029D41CA8023E00EDF053 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		56BA77471CA9048200DA7D8F /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				56F6E86B1CA05ED00093477E /* AppDelegate.swift */,
 				56F6E86F1CA05ED00093477E /* Main.storyboard */,
 				56F6E8741CA05ED00093477E /* LaunchScreen.storyboard */,
+				548C24C21CA9E23A00AE8645 /* Calendar.swift */,
 				56F6E8771CA05ED00093477E /* Info.plist */,
 				5412AA7E1CA9C323000E520E /* Reschedule.swift */,
 				56F6E87D1CA082860093477E /* User.swift */,
@@ -211,6 +214,7 @@
 				56F6E87E1CA082860093477E /* User.swift in Sources */,
 				5412AA7D1CA9C04E000E520E /* Task.swift in Sources */,
 				565029D51CA8023E00EDF053 /* Profile.swift in Sources */,
+				548C24C31CA9E23A00AE8645 /* Calendar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

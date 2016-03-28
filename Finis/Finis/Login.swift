@@ -17,7 +17,6 @@ class Login: KeyboardViewController, UITextFieldDelegate {
     @IBOutlet var background: UIImageView!
     
     @IBOutlet weak var ScrollView: UIScrollView!
-    
 
     //arthur_array de imagens para serem geradas aleatoriamente no background
     let images: [String] = ["bg1", "bg2", "bg3", "bg4"]
@@ -28,6 +27,7 @@ class Login: KeyboardViewController, UITextFieldDelegate {
         
         self.text1.delegate = self
         self.text2.delegate = self
+        
         
         text1.setValue(UIColor(red: CGFloat(247.0/255.0), green: CGFloat(247.0/255.0), blue: CGFloat(247.0/255.0), alpha: CGFloat(1.0)), forKeyPath: "_placeholderLabel.textColor")
         text2.setValue(UIColor(red: CGFloat(247.0/255.0), green: CGFloat(247.0/255.0), blue: CGFloat(247.0/255.0), alpha: CGFloat(1.0)), forKeyPath: "_placeholderLabel.textColor")

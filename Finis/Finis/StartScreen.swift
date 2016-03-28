@@ -17,14 +17,16 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate,UITableViewDataSo
     @IBOutlet weak var addGoal: UITextField!
     @IBOutlet weak var insertGoal: UITextField!
     @IBOutlet weak var imageView: UIImageView!
+    var todayLabel: UILabel!
     
     //var tasks: NSMutableArray! = NSMutableArray()
     var tasks: [String] = [ "DESIGN INTERFACE", "CLEAN MESSY ROOM", "WATCH DAREDEVIL", "EAT VEGETABLES", "PAY BILLS", "REPLY EMAILS"]
     
-    //var tasks: [String] = []
-  
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        dateLabel.text = currentDate
+        
         tag.hidden = true
         insertGoal.hidden = true
         addGoal.textColor = UIColor.clearColor()
