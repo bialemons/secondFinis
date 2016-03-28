@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StartScreen: UIViewController, UITextFieldDelegate,UITableViewDataSource,UITableViewDelegate{
+class StartScreen: KeyboardViewController, UITextFieldDelegate,UITableViewDataSource,UITableViewDelegate{
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -54,13 +54,7 @@ class StartScreen: UIViewController, UITextFieldDelegate,UITableViewDataSource,U
     @IBAction func add(sender: AnyObject) {
         tag.hidden = false
     }
-    
-    
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-        
-    }
+
     
     func textFieldDidBeginEditing(textField: UITextField) {
        tag.hidden = false

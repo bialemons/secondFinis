@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Login: UIViewController, UITextFieldDelegate {
+class Login: KeyboardViewController, UITextFieldDelegate {
     
     var user2: User!
     @IBOutlet weak var text1: UITextField!
@@ -58,17 +58,7 @@ class Login: UIViewController, UITextFieldDelegate {
         return images[randomNumber]
     }*/
     
-    //arthur_teclado some quando a return key é pressionada
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        self.view.endEditing(true)
-        return false
-    }
-    
-    //arthur_teclado some quando qualquer lugar da tela é clicado
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
+
     
     func textFieldDidBeginEditing(textField: UITextField) {
         ScrollView.setContentOffset(CGPoint(x: 0, y: 125), animated: true)

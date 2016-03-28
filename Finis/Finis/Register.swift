@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Register: UIViewController, UITextFieldDelegate {
+class Register: KeyboardViewController, UITextFieldDelegate {
 
     @IBOutlet var background: UIImageView!
     @IBOutlet weak var ScrollView: UIScrollView!
@@ -39,17 +39,7 @@ class Register: UIViewController, UITextFieldDelegate {
     
     
     
-    // teclado some quando qualquer lugar da tela é clicado
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        self.view.endEditing(true)
-    }
     
-    
-    // teclado some ao clicar na tecla return
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
     
     
     func textFieldDidBeginEditing(textField: UITextField) {
