@@ -27,7 +27,6 @@
 		56F6E8821CA09FBD0093477E /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6E8811CA09FBD0093477E /* StartScreen.swift */; };
 		56F6E8841CA0A00E0093477E /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6E8831CA0A00E0093477E /* Login.swift */; };
 		56F6E88A1CA30C0D0093477E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6E8891CA30C0D0093477E /* ViewController.swift */; };
-		56F6E88C1CA30CC30093477E /* TheNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6E88B1CA30CC30093477E /* TheNextViewController.swift */; };
 		56F6E88E1CA30E9A0093477E /* TheLastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F6E88D1CA30E9A0093477E /* TheLastViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +52,6 @@
 		56F6E8811CA09FBD0093477E /* StartScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; };
 		56F6E8831CA0A00E0093477E /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		56F6E8891CA30C0D0093477E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		56F6E88B1CA30CC30093477E /* TheNextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheNextViewController.swift; sourceTree = "<group>"; };
 		56F6E88D1CA30E9A0093477E /* TheLastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TheLastViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,7 +108,6 @@
 				56F6E8811CA09FBD0093477E /* StartScreen.swift */,
 				56F6E8831CA0A00E0093477E /* Login.swift */,
 				56F6E8891CA30C0D0093477E /* ViewController.swift */,
-				56F6E88B1CA30CC30093477E /* TheNextViewController.swift */,
 				56F6E88D1CA30E9A0093477E /* TheLastViewController.swift */,
 				565029D41CA8023E00EDF053 /* Profile.swift */,
 				54A0BD881CA6396000DBC838 /* Assets.xcassets */,
@@ -210,7 +207,6 @@
 				56F6E87E1CA082860093477E /* User.swift in Sources */,
 				5412AA7D1CA9C04E000E520E /* Task.swift in Sources */,
 				565029D51CA8023E00EDF053 /* Profile.swift in Sources */,
-				56F6E88C1CA30CC30093477E /* TheNextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
