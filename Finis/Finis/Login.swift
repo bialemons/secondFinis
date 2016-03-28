@@ -20,7 +20,7 @@ class Login: KeyboardViewController, UITextFieldDelegate {
     
 
     //arthur_array de imagens para serem geradas aleatoriamente no background
-    //let images: [String] = ["bg1", "bg2", "bg3", "bg4"]
+    let images: [String] = ["bg1", "bg2", "bg3", "bg4"]
 
     
     override func viewDidLoad() {
@@ -32,7 +32,7 @@ class Login: KeyboardViewController, UITextFieldDelegate {
         text1.setValue(UIColor(red: CGFloat(247.0/255.0), green: CGFloat(247.0/255.0), blue: CGFloat(247.0/255.0), alpha: CGFloat(1.0)), forKeyPath: "_placeholderLabel.textColor")
         text2.setValue(UIColor(red: CGFloat(247.0/255.0), green: CGFloat(247.0/255.0), blue: CGFloat(247.0/255.0), alpha: CGFloat(1.0)), forKeyPath: "_placeholderLabel.textColor")
     
-       //background.image = UIImage(named: randomImages())
+       background.image = UIImage(named: randomImages())
 
     }
 
@@ -45,7 +45,7 @@ class Login: KeyboardViewController, UITextFieldDelegate {
     
     
     //arthur_Fazer aparecer imagens para o background aleatoriamente
-    /*func randomImages () -> String {
+    func randomImages () -> String {
         
         let unsignedArrayCount = UInt32(images.count)
         let unsignedRandomNumber = arc4random_uniform(unsignedArrayCount)
@@ -56,7 +56,7 @@ class Login: KeyboardViewController, UITextFieldDelegate {
         } while randomNumber == previousRandomIndex
         
         return images[randomNumber]
-    }*/
+    }
     
 
     
