@@ -113,10 +113,10 @@
 				56F6E8891CA30C0D0093477E /* ViewController.swift */,
 				56F6E88D1CA30E9A0093477E /* TheLastViewController.swift */,
 				565029D41CA8023E00EDF053 /* Profile.swift */,
-				54A0BD881CA6396000DBC838 /* Assets.xcassets */,
 				56BA77471CA9048200DA7D8F /* Item.swift */,
 				56BA774B1CA927E200DA7D8F /* TableViewCell.swift */,
 				24E1901A1CA9BBC2004E81A5 /* KeyboardViewController.swift */,
+				54A0BD881CA6396000DBC838 /* Assets.xcassets */,
 			);
 			path = Finis;
 			sourceTree = "<group>";
