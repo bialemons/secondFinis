@@ -31,10 +31,9 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
     //calendar: Tomorrow está instanciando dentro de ViewDidLoad
     let today = NSDate()
     @IBOutlet var todayLabel: UILabel!
-    @IBOutlet var tomorrowLabel: UILabel!
     
-    //var tasks: NSMutableArray! = NSMutableArray()
-    var tasks: [String] = [ "DESIGN INTERFACE", "CLEAN MESSY ROOM", "WATCH DAREDEVIL", "EAT VEGETABLES", "PAY BILLS", "REPLY EMAILS"]
+    //var tasks
+    var tasks = [ "DESIGN INTERFACE", "CLEAN MESSY ROOM", "WATCH DAREDEVIL", "EAT VEGETABLES", "PAY BILLS", "REPLY EMAILS"]
     
     
     //seções collectionView para formar o calendário

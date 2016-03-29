@@ -198,11 +198,11 @@
                                             <rect key="frame" x="72" y="312" width="240" height="1"/>
                                         </variation>
                                     </imageView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ybc-wK-t0s">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ybc-wK-t0s">
                                         <rect key="frame" x="20" y="397" width="335" height="30"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <variation key="widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="71" y="359" width="315" height="17"/>
                                         </variation>
@@ -347,7 +347,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="laq-G5-E4J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1098" y="993"/>
+            <point key="canvasLocation" x="1098" y="1020"/>
         </scene>
         <!--Login-->
         <scene sceneID="eFz-fU-tGE">
@@ -460,7 +460,7 @@
                                         </constraints>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="AmP-lY-2df"/>
@@ -475,37 +475,6 @@
                                         </variation>
                                         <connections>
                                             <outlet property="delegate" destination="JdW-GU-ImP" id="wzI-YQ-UzM"/>
-                                        </connections>
-                                    </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="tzA-03-7c7">
-                                        <rect key="frame" x="-25" y="-30" width="97" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="45" id="4jh-5P-Hhl"/>
-                                            <constraint firstAttribute="width" constant="315" id="Kio-Fw-wVv"/>
-                                            <constraint firstAttribute="height" constant="47" id="Tvv-zV-ntv"/>
-                                            <constraint firstAttribute="width" constant="315" id="vL6-6C-oiS"/>
-                                        </constraints>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="4jh-5P-Hhl"/>
-                                                <exclude reference="Kio-Fw-wVv"/>
-                                                <exclude reference="Tvv-zV-ntv"/>
-                                                <exclude reference="vL6-6C-oiS"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="widthClass=compact">
-                                            <mask key="constraints">
-                                                <exclude reference="4jh-5P-Hhl"/>
-                                                <include reference="Kio-Fw-wVv"/>
-                                                <include reference="Tvv-zV-ntv"/>
-                                                <exclude reference="vL6-6C-oiS"/>
-                                            </mask>
-                                        </variation>
-                                        <connections>
-                                            <outlet property="delegate" destination="JdW-GU-ImP" id="ndP-LV-Izx"/>
                                         </connections>
                                     </textField>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-avatar" translatesAutoresizingMaskIntoConstraints="NO" id="lIF-7w-WNz">
@@ -536,6 +505,38 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" highlightedImage="icon" translatesAutoresizingMaskIntoConstraints="NO" id="hMa-5y-xms">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                     </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="tzA-03-7c7">
+                                        <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="4jh-5P-Hhl"/>
+                                            <constraint firstAttribute="width" constant="315" id="Kio-Fw-wVv"/>
+                                            <constraint firstAttribute="height" constant="47" id="Tvv-zV-ntv"/>
+                                            <constraint firstAttribute="width" constant="315" id="vL6-6C-oiS"/>
+                                        </constraints>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="4jh-5P-Hhl"/>
+                                                <exclude reference="Kio-Fw-wVv"/>
+                                                <exclude reference="Tvv-zV-ntv"/>
+                                                <exclude reference="vL6-6C-oiS"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="53" y="313" width="315" height="47"/>
+                                            <mask key="constraints">
+                                                <exclude reference="4jh-5P-Hhl"/>
+                                                <include reference="Kio-Fw-wVv"/>
+                                                <include reference="Tvv-zV-ntv"/>
+                                                <exclude reference="vL6-6C-oiS"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <outlet property="delegate" destination="JdW-GU-ImP" id="ndP-LV-Izx"/>
+                                        </connections>
+                                    </textField>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="lIF-7w-WNz" firstAttribute="leading" secondItem="wdb-sD-rf6" secondAttribute="leading" constant="31" id="44c-br-HG5"/>
@@ -584,9 +585,9 @@
                                         <exclude reference="6nv-Ux-kQx"/>
                                         <exclude reference="r1Z-3p-W24"/>
                                         <exclude reference="z6B-yi-ZxE"/>
-                                        <exclude reference="tzA-03-7c7"/>
                                         <exclude reference="lIF-7w-WNz"/>
                                         <exclude reference="hMa-5y-xms"/>
+                                        <exclude reference="tzA-03-7c7"/>
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="JRf-7L-y6b"/>
@@ -630,9 +631,9 @@
                                         <include reference="6nv-Ux-kQx"/>
                                         <include reference="r1Z-3p-W24"/>
                                         <include reference="z6B-yi-ZxE"/>
-                                        <include reference="tzA-03-7c7"/>
                                         <include reference="lIF-7w-WNz"/>
                                         <include reference="hMa-5y-xms"/>
+                                        <include reference="tzA-03-7c7"/>
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="JRf-7L-y6b"/>
@@ -1042,6 +1043,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="3U6-bm-VZX"/>
         <segue reference="9na-ls-78O"/>
-        <segue reference="18t-TS-8as"/>
+        <segue reference="Y43-kT-Gfl"/>
     </inferredMetricsTieBreakers>
 </document>

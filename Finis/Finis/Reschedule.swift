@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Reschedule: ViewController {
+class Reschedule: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
