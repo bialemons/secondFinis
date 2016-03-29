@@ -10,15 +10,7 @@ import UIKit
 
 class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate  {
     
-    enum daysOfWeek {
-        case sunday
-        case monday
-        case tuesday
-        case wednesday
-        case thursday
-        case friday
-        case saturday
-    }
+    let days : [String] = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var ScrollView: UIScrollView!
@@ -49,6 +41,7 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
             
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! CollectionViewCell
         
+        cell.dayLabel.text =
         return cell
     }
     
