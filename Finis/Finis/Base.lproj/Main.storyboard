@@ -689,6 +689,15 @@
                                     <rect key="frame" x="84" y="86" width="197" height="21"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whV-NB-Ao4">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="84" y="129" width="148" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -706,6 +715,7 @@
                                 <exclude reference="Dim-XL-8GC"/>
                                 <exclude reference="Atj-Wk-tBP"/>
                                 <exclude reference="t5E-EQ-17d"/>
+                                <exclude reference="whV-NB-Ao4"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="9N1-aJ-LTJ"/>
@@ -723,6 +733,7 @@
                                 <include reference="Dim-XL-8GC"/>
                                 <include reference="Atj-Wk-tBP"/>
                                 <include reference="t5E-EQ-17d"/>
+                                <include reference="whV-NB-Ao4"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="9N1-aJ-LTJ"/>
@@ -738,9 +749,11 @@
                         <outlet property="addGoal" destination="Dim-XL-8GC" id="AKK-Na-jsC"/>
                         <outlet property="imageView" destination="hPL-cW-0Iq" id="SDy-D2-2cB"/>
                         <outlet property="insertGoal" destination="MuB-rw-dbU" id="LPF-TE-2Ty"/>
+                        <outlet property="mondayLabel" destination="whV-NB-Ao4" id="b3H-ZA-GtW"/>
                         <outlet property="tableView" destination="1Nn-FY-AKq" id="BMK-9w-Gwz"/>
                         <outlet property="tag" destination="ycF-Qy-aU1" id="sTC-WH-Spz"/>
                         <outlet property="todayLabel" destination="t5E-EQ-17d" id="Z4l-9S-Z1B"/>
+                        <outlet property="tomorrowLabel" destination="whV-NB-Ao4" id="6OF-UQ-ieB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rxI-D4-L8b" userLabel="First Responder" sceneMemberID="firstResponder"/>

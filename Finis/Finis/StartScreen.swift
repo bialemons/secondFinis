@@ -8,8 +8,9 @@
 
 import UIKit
 
-class StartScreen: KeyboardViewController, UITextFieldDelegate,UITableViewDataSource,UITableViewDelegate{
+class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate{
     
+
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var ScrollView: UIScrollView!
@@ -17,7 +18,11 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate,UITableViewDataSo
     @IBOutlet weak var addGoal: UITextField!
     @IBOutlet weak var insertGoal: UITextField!
     @IBOutlet weak var imageView: UIImageView!
+    
+    //calendar: Tomorrow está instanciando dentro de ViewDidLoad
+    let today = NSDate()
     @IBOutlet var todayLabel: UILabel!
+    @IBOutlet var tomorrowLabel: UILabel!
     
     //var tasks: NSMutableArray! = NSMutableArray()
     var tasks: [String] = [ "DESIGN INTERFACE", "CLEAN MESSY ROOM", "WATCH DAREDEVIL", "EAT VEGETABLES", "PAY BILLS", "REPLY EMAILS"]
@@ -25,8 +30,24 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate,UITableViewDataSo
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // label que mostra a data do dia
+        // label que mostra today
         todayLabel.text = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: NSDateFormatterStyle.MediumStyle, timeStyle: NSDateFormatterStyle.ShortStyle)
+        
+        //label que mostra tomorrow
+        let tomorrow = NSCalendar.currentCalendar().dateByAddingUnit(
+            .Day,
+            value: 1,
+            toDate: today,
+            options: NSCalendarOptions(rawValue: 0))
+        
+      
+
+        
+
+        
+        
+        
+
 
             
         tag.hidden = true
@@ -53,7 +74,6 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate,UITableViewDataSo
         self.tableView.reloadData()
         
     }
-    
     
     @IBAction func add(sender: AnyObject) {
         tag.hidden = false
