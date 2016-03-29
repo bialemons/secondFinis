@@ -39,7 +39,7 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
     
     //seções collectionView para formar o calendário
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return 3
+        return 100
     }
     
     // números de itens: 7 dias da semana
@@ -53,7 +53,7 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
         
         return cell
     }
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -69,17 +69,11 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
         dateFormatter.dateFormat = "EEEE"
        // let dayOfWeek = dateFormatter.stringFromDate(currentDate)
         
+        func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+            return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10)
+        }
         
-        
-        
-        
-        //label que mostra tomorrow
-        let tomorrow = NSCalendar.currentCalendar().dateByAddingUnit(
-            .Day,
-            value: 1,
-            toDate: today,
-            options: NSCalendarOptions(rawValue: 0))
-        
+
         tag.hidden = true
         insertGoal.hidden = true
         addGoal.textColor = UIColor.clearColor()
