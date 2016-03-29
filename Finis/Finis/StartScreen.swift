@@ -20,7 +20,6 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
         case saturday
     }
 
-    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var ScrollView: UIScrollView!
     @IBOutlet weak var tag: UIButton!
