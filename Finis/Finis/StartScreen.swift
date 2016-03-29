@@ -10,7 +10,10 @@ import UIKit
 
 class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate  {
     
-    let days : [String] = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
+    
+    var semana = 0
+    
+    let days : [String] = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var ScrollView: UIScrollView!
@@ -38,11 +41,13 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-            
+        
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! CollectionViewCell
-        //aaa
-//        cell.dayLabel.text
+        
+        cell.dayLabel.text = days[indexPath.row]
         return cell
+        
+        
     }
     
     override func viewDidLoad() {
