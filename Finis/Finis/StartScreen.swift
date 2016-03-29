@@ -10,6 +10,15 @@ import UIKit
 
 class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate{
     
+    enum daysOfWeek {
+        case sunday
+        case monday
+        case tuesday
+        case wednesday
+        case thursday
+        case friday
+        case saturday
+    }
 
     
     @IBOutlet weak var tableView: UITableView!
@@ -31,7 +40,20 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
         super.viewDidLoad()
         
         // label que mostra today
-        todayLabel.text = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: NSDateFormatterStyle.MediumStyle, timeStyle: NSDateFormatterStyle.ShortStyle)
+
+        //let currentDate = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: NSDateFormatterStyle.MediumStyle, timeStyle: NSDateFormatterStyle.ShortStyle)
+        
+
+        
+        let currentDate = NSDate()
+        todayLabel.text = dateFormatter.stringFromDate(currentDate)
+
+        dateFormatter.dateFormat = "EEEE"
+       // let dayOfWeek = dateFormatter.stringFromDate(currentDate)
+        
+        
+        
+        
         
         //label que mostra tomorrow
         let tomorrow = NSCalendar.currentCalendar().dateByAddingUnit(
