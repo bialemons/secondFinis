@@ -70,7 +70,7 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
        // let dayOfWeek = dateFormatter.stringFromDate(currentDate)
         
         func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-            return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10)
+            return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         }
         
 
