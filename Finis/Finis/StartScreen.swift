@@ -40,8 +40,8 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
             
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! CollectionViewCell
-        
-        cell.dayLabel.text =
+        //aaa
+//        cell.dayLabel.text
         return cell
     }
     
