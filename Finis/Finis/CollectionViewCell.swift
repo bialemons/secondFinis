@@ -10,6 +10,6 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
     
-    
+    @IBOutlet var dayLabel: UILabel!
     
 }
