@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate{
+class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate  {
     
     enum daysOfWeek {
         case sunday
@@ -36,6 +36,24 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
     //var tasks: NSMutableArray! = NSMutableArray()
     var tasks: [String] = [ "DESIGN INTERFACE", "CLEAN MESSY ROOM", "WATCH DAREDEVIL", "EAT VEGETABLES", "PAY BILLS", "REPLY EMAILS"]
     
+    
+    //seções collectionView para formar o calendário
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 3
+    }
+    
+    // números de itens: 7 dias da semana
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 7
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+            
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! CollectionViewCell
+        
+        return cell
+    }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -62,16 +80,6 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
             toDate: today,
             options: NSCalendarOptions(rawValue: 0))
         
-      
-
-        
-
-        
-        
-        
-
-
-            
         tag.hidden = true
         insertGoal.hidden = true
         addGoal.textColor = UIColor.clearColor()
