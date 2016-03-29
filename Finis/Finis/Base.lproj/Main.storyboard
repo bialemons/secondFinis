@@ -1067,7 +1067,7 @@
                                     </collectionViewCell>
                                 </cells>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-1" y="78" width="400" height="64"/>
+                                    <rect key="frame" x="-1" y="64" width="400" height="64"/>
                                 </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="CRZ-Cd-VBv" id="RXa-cz-fKM"/>
