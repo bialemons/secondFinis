@@ -20,7 +20,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource {
         pageImages = NSArray(objects: "image1","image2","image3")
         let pageControl = UIPageControl.init(frame: CGRectMake(0, UIScreen.mainScreen().bounds.size.height*14/15, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height))
         pageControl.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height+40)
-        pageControl.backgroundColor = UIColor(red: 78.0/255, green: 205.0/255, blue: 196.0/255, alpha: 1.0)
+        pageControl.backgroundColor = UIColor.clearColor()
         view.addSubview(pageControl)
         
         
