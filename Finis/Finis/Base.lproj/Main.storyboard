@@ -524,9 +524,6 @@
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
-                                                <variation key="widthClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="26"/>
-                                                </variation>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyt-28-Hnz">
                                                 <rect key="frame" x="156" y="20" width="50" height="25"/>
@@ -534,9 +531,6 @@
                                                 <state key="normal" title="Sign Up">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
-                                                <variation key="widthClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="135" y="0.0" width="44" height="26"/>
-                                                </variation>
                                                 <connections>
                                                     <segue destination="hVc-wu-zdX" kind="show" identifier="register" id="9na-ls-78O"/>
                                                 </connections>
@@ -1023,15 +1017,6 @@
                                     <segue destination="Ysu-Mn-gaP" kind="show" id="VBM-bI-XAl"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5E-EQ-17d">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="84" y="86" width="197" height="21"/>
-                                </variation>
-                            </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GR8-3Y-YdB">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pQy-CK-bSU">
@@ -1078,13 +1063,22 @@
                                     </collectionViewCell>
                                 </cells>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-1" y="64" width="400" height="64"/>
+                                    <rect key="frame" x="-1" y="99" width="400" height="64"/>
                                 </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="CRZ-Cd-VBv" id="RXa-cz-fKM"/>
                                     <outlet property="delegate" destination="CRZ-Cd-VBv" id="Bxn-Vd-1k7"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAl-Aa-Hb4">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="178" y="72" width="42" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1101,8 +1095,8 @@
                                 <exclude reference="NpL-rg-hcI"/>
                                 <exclude reference="Dim-XL-8GC"/>
                                 <exclude reference="Atj-Wk-tBP"/>
-                                <exclude reference="t5E-EQ-17d"/>
                                 <exclude reference="GR8-3Y-YdB"/>
+                                <exclude reference="lAl-Aa-Hb4"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="9N1-aJ-LTJ"/>
@@ -1119,8 +1113,8 @@
                                 <include reference="NpL-rg-hcI"/>
                                 <include reference="Dim-XL-8GC"/>
                                 <include reference="Atj-Wk-tBP"/>
-                                <include reference="t5E-EQ-17d"/>
                                 <include reference="GR8-3Y-YdB"/>
+                                <include reference="lAl-Aa-Hb4"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="9N1-aJ-LTJ"/>
@@ -1136,9 +1130,9 @@
                         <outlet property="addGoal" destination="Dim-XL-8GC" id="AKK-Na-jsC"/>
                         <outlet property="imageView" destination="hPL-cW-0Iq" id="SDy-D2-2cB"/>
                         <outlet property="insertGoal" destination="MuB-rw-dbU" id="LPF-TE-2Ty"/>
+                        <outlet property="monthLabel" destination="lAl-Aa-Hb4" id="gWx-KS-dfb"/>
                         <outlet property="tableView" destination="1Nn-FY-AKq" id="BMK-9w-Gwz"/>
                         <outlet property="tag" destination="ycF-Qy-aU1" id="sTC-WH-Spz"/>
-                        <outlet property="todayLabel" destination="t5E-EQ-17d" id="Z4l-9S-Z1B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rxI-D4-L8b" userLabel="First Responder" sceneMemberID="firstResponder"/>

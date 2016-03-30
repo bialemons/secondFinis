@@ -14,20 +14,19 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
     var semana = 0
     
     let days : [String] = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+    
     let daysNumbers = ["0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27", "28", "29", "30", "31"]
+    
     let months: [String] = ["January","February","March","April","May","June","July","August","September","October","November","December"]
 
+    @IBOutlet var monthLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var ScrollView: UIScrollView!
     @IBOutlet weak var tag: UIButton!
     @IBOutlet weak var addGoal: UITextField!
     @IBOutlet weak var insertGoal: UITextField!
     @IBOutlet weak var imageView: UIImageView!
-    
-    //calendar: Tomorrow está instanciando dentro de ViewDidLoad
-    let today = NSDate()
-    @IBOutlet var todayLabel: UILabel!
-    
+
     //var tasks
     var tasks = [ "DESIGN INTERFACE", "CLEAN MESSY ROOM", "WATCH DAREDEVIL", "EAT VEGETABLES", "PAY BILLS", "REPLY EMAILS"]
     
@@ -55,18 +54,6 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // label que mostra today
-
-        //let currentDate = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: NSDateFormatterStyle.MediumStyle, timeStyle: NSDateFormatterStyle.ShortStyle)
-        
-
-        
-        let currentDate = NSDate()
-        todayLabel.text = dateFormatter.stringFromDate(currentDate)
-
-        dateFormatter.dateFormat = "EEEE"
-       // let dayOfWeek = dateFormatter.stringFromDate(currentDate)
-        
         func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
             return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         }
@@ -79,18 +66,6 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
 //        navigationController!.navigationBar.tintColor = UIColor(red: 78.0/255, green: 205.0/255, blue: 196.0/255, alpha: 1.0)
 
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red: 78.0/255, green: 205.0/255, blue: 196.0/255, alpha: 1.0)]
-        
-        //Fundo da Navigation Controller
-//        navigationController!.navigationBar.barTintColor = UIColor(red: 242/255, green: 242/255, blue: 242/255, alpha: 1.0)
-        
-        //tasks += [ "DESIGN INTERFACE","CLEAN MESSY ROOM","WATCH DAREDEVIL","EAT VEGETABLES","PAY BILLS","REPLY EMAILS"]
-        
-        /*self.tasks.addObject("DESIGN INTERFACE")
-        self.tasks.addObject("CLEAN MESSY ROOM")
-        self.tasks.addObject("WATCH DAREDEVIL")
-        self.tasks.addObject("EAT VEGETABLES")
-        self.tasks.addObject("PAY BILLS")
-        self.tasks.addObject("REPLY EMAILS")*/
     
         
         self.tableView.reloadData()
@@ -167,7 +142,4 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
     
         return cell
     }
-    
-    
-    
 }
