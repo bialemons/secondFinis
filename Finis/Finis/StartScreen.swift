@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate  {
+class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
     
     var semana = 0
     
@@ -32,7 +32,7 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
     
 
     //var tasks
-    var tasks = [ "DESIGN INTERFACE", "CLEAN MESSY ROOM", "WATCH DAREDEVIL", "EAT VEGETABLES", "PAY BILLS", "REPLY EMAILS"]
+     var toDoItems = [ToDoItem]()
     
     
     //seções collectionView para formar o calendário
@@ -57,12 +57,6 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
-        
-        
-        
-
         tag.hidden = true
         insertGoal.hidden = true
         addGoal.textColor = UIColor.clearColor()
@@ -86,6 +80,18 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
         
         self.view.bringSubviewToFront(dateLabel)
         
+        if toDoItems.count > 0 {
+            return
+        }
+        toDoItems.append(ToDoItem(text: "feed the cat"))
+        toDoItems.append(ToDoItem(text: "buy eggs"))
+        toDoItems.append(ToDoItem(text: "watch WWDC videos"))
+        toDoItems.append(ToDoItem(text: "rule the Web"))
+        
+        tableView.separatorStyle = .None
+        //tableView.rowHeight = 40.0
+        
+        
     }
     
     @IBAction func add(sender: AnyObject) {
@@ -100,11 +106,11 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
        //ScrollView.hidden = false
         
        ScrollView.setContentOffset(CGPoint(x: 0, y: 184), animated: true)
-        let lightBlur = UIBlurEffect(style: UIBlurEffectStyle.Light)
-        let blurView = UIVisualEffectView(effect: lightBlur)
+        //let lightBlur = UIBlurEffect(style: UIBlurEffectStyle.Light)
+       // let blurView = UIVisualEffectView(effect: lightBlur)
         
-        blurView.frame = imageView.bounds
-        imageView.addSubview(blurView)
+       // blurView.frame = imageView.bounds
+       // imageView.addSubview(blurView)
     
         
     }
@@ -117,14 +123,15 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
         
         
         ScrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
-        for view in self.imageView.subviews{
-            view.removeFromSuperview()
-        }
+//        for view in self.imageView.subviews{
+//            view.removeFromSuperview()
+//        }
         
         if insertGoal.text?.isEmpty == false {
-        tasks.append(insertGoal.text!)
+            toDoItems.append(ToDoItem(text: insertGoal.text!))
+        //tasks.append(insertGoal.text!)
         
-       let insertionIndexPath = NSIndexPath(forRow: tasks.count - 1, inSection: 0)
+       let insertionIndexPath = NSIndexPath(forRow: toDoItems.count - 1, inSection: 0)
         tableView.insertRowsAtIndexPaths([insertionIndexPath], withRowAnimation: UITableViewRowAnimation.Fade)
             insertGoal.text! = ""
         }
@@ -142,18 +149,26 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.tasks.count
+        return toDoItems.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! TableViewCell
-        
-        //cell.titleLabel.text = self.tasks.objectAtIndex(indexPath.row) as? String
-        cell.titleLabel.text = tasks[indexPath.row]
-    
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell",
+            forIndexPath: indexPath) as! TableViewCell
+        let item = toDoItems[indexPath.row]
+        cell.toDoItem = item
+        cell.titleLabel?.text = item.text
+        cell.titleLabel?.backgroundColor = UIColor.clearColor()
+        cell.selectionStyle = .None
+        //cell.delegate = self
+        cell.toDoItem = item
         return cell
     }
 }
