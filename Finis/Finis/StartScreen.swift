@@ -10,7 +10,6 @@ import UIKit
 
 class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate  {
     
-    
     var semana = 0
     
     let days : [String] = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
@@ -26,6 +25,11 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
     @IBOutlet weak var addGoal: UITextField!
     @IBOutlet weak var insertGoal: UITextField!
     @IBOutlet weak var imageView: UIImageView!
+    
+   
+    var dateLabelContainer: UIView!
+    
+    
 
     //var tasks
     var tasks = [ "DESIGN INTERFACE", "CLEAN MESSY ROOM", "WATCH DAREDEVIL", "EAT VEGETABLES", "PAY BILLS", "REPLY EMAILS"]
@@ -53,9 +57,11 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-            return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
-        }
+        
+        
+        
+        
+        
 
         tag.hidden = true
         insertGoal.hidden = true
@@ -66,6 +72,19 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red: 78.0/255, green: 205.0/255, blue: 196.0/255, alpha: 1.0)]
         
         self.tableView.reloadData()
+        
+        
+        let dateLabel = UILabel(frame:CGRectMake(self.view.frame.size.width - 100, 60, 100, 50))
+        dateLabel.textAlignment = NSTextAlignment.Center
+        dateLabel.text = "TEXTO"
+        //        dateLabel.font = UIFont(name: , size: 40)
+        dateLabel.textColor = UIColor.blackColor()
+        self.view.addSubview(dateLabel)
+
+        print(dateLabel.frame)
+
+        
+        self.view.bringSubviewToFront(dateLabel)
         
     }
     
