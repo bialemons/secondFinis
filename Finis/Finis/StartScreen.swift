@@ -48,7 +48,6 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
         cell.dayLabel.text = days[indexPath.row]
         return cell
         
-        
     }
     
     override func viewDidLoad() {
@@ -58,7 +57,6 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
             return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         }
 
-
         tag.hidden = true
         insertGoal.hidden = true
         addGoal.textColor = UIColor.clearColor()
@@ -66,7 +64,6 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
 //        navigationController!.navigationBar.tintColor = UIColor(red: 78.0/255, green: 205.0/255, blue: 196.0/255, alpha: 1.0)
 
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red: 78.0/255, green: 205.0/255, blue: 196.0/255, alpha: 1.0)]
-    
         
         self.tableView.reloadData()
         
@@ -112,8 +109,6 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
         tableView.insertRowsAtIndexPaths([insertionIndexPath], withRowAnimation: UITableViewRowAnimation.Fade)
             insertGoal.text! = ""
         }
-
-        
         
         /*tasks.addObject(insertgoal!)
         

@@ -241,11 +241,14 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="97" y="526" width="206.5" height="13"/>
+                                            <rect key="frame" x="197" y="526" width="206.5" height="13"/>
                                         </variation>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="hXS-nd-7iI">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="234.5" y="113" width="131" height="131"/>
+                                        </variation>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="vTf-V8-ORb">
                                         <rect key="frame" x="20" y="226" width="335" height="30"/>
@@ -325,7 +328,8 @@
                                                 <exclude reference="wol-Xq-9wk"/>
                                             </mask>
                                         </variation>
-                                        <variation key="widthClass=compact">
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="150" y="426" width="300" height="40"/>
                                             <mask key="constraints">
                                                 <include reference="ep6-Cd-03Q"/>
                                                 <include reference="wol-Xq-9wk"/>
@@ -512,9 +516,6 @@
                                         <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="12"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="136" y="483" width="128" height="14"/>
-                                        </variation>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJH-OM-ubs">
                                         <rect key="frame" x="63" y="480" width="226" height="65"/>
@@ -536,9 +537,6 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="118" y="533" width="179" height="26"/>
-                                        </variation>
                                     </stackView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-password" translatesAutoresizingMaskIntoConstraints="NO" id="r1Z-3p-W24">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -640,9 +638,6 @@
                                             </mask>
                                         </variation>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" highlightedImage="icon" translatesAutoresizingMaskIntoConstraints="NO" id="hMa-5y-xms">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nv-Ux-kQx">
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                         <color key="backgroundColor" red="0.30588235294117649" green="0.80392156862745101" blue="0.76862745098039209" alpha="1" colorSpace="calibratedRGB"/>
@@ -679,6 +674,9 @@
                                             <segue destination="SP5-Fh-V5G" kind="show" identifier="start" id="LhF-9W-KgC"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" highlightedImage="icon" translatesAutoresizingMaskIntoConstraints="NO" id="hMa-5y-xms">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="lIF-7w-WNz" firstAttribute="leading" secondItem="wdb-sD-rf6" secondAttribute="leading" constant="31" id="44c-br-HG5"/>
@@ -728,8 +726,8 @@
                                         <exclude reference="z6B-yi-ZxE"/>
                                         <exclude reference="tzA-03-7c7"/>
                                         <exclude reference="lIF-7w-WNz"/>
-                                        <exclude reference="hMa-5y-xms"/>
                                         <exclude reference="6nv-Ux-kQx"/>
+                                        <exclude reference="hMa-5y-xms"/>
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="H75-Rq-yY5"/>
@@ -766,7 +764,8 @@
                                         <exclude reference="geM-qN-l3f"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact">
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                     <mask key="subviews">
                                         <include reference="v5A-Tp-wiS"/>
                                         <include reference="nSx-Tl-4ht"/>
@@ -774,8 +773,8 @@
                                         <include reference="z6B-yi-ZxE"/>
                                         <include reference="tzA-03-7c7"/>
                                         <include reference="lIF-7w-WNz"/>
-                                        <include reference="hMa-5y-xms"/>
                                         <include reference="6nv-Ux-kQx"/>
+                                        <include reference="hMa-5y-xms"/>
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="H75-Rq-yY5"/>
@@ -1207,8 +1206,8 @@
         <image name="icon-password" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="9na-ls-78O"/>
         <segue reference="3U6-bm-VZX"/>
-        <segue reference="Icw-WU-hvL"/>
-        <segue reference="Y43-kT-Gfl"/>
+        <segue reference="18t-TS-8as"/>
     </inferredMetricsTieBreakers>
 </document>
