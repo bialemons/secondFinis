@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate {
+class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataSource, UITableViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate, TableViewCellDelegate {
     
     var semana = 0
     
@@ -167,8 +167,22 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
         cell.titleLabel?.text = item.text
         cell.titleLabel?.backgroundColor = UIColor.clearColor()
         cell.selectionStyle = .None
-        //cell.delegate = self
+        cell.delegate = self
         cell.toDoItem = item
         return cell
+    }
+    
+    func toDoItemDeleted(toDoItem: ToDoItem) {
+    let index = (toDoItems as NSArray).indexOfObject(toDoItem)
+    if index == NSNotFound { return }
+    
+    // could removeAtIndex in the loop but keep it here for when indexOfObject works
+    toDoItems.removeAtIndex(index)
+    
+    // use the UITableView to animate the removal of this row
+    tableView.beginUpdates()
+    let indexPathForRow = NSIndexPath(forRow: index, inSection: 0)
+    tableView.deleteRowsAtIndexPaths([indexPathForRow], withRowAnimation: .Fade)
+    tableView.endUpdates()
     }
 }
