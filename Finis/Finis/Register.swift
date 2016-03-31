@@ -16,6 +16,7 @@ class Register: KeyboardViewController, UITextFieldDelegate {
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     var user: User!
+    var userreg: Pessoa!
 
     //arthur_array do bg
     var images = ["bg1", "bg2", "bg3", "bg4"]
@@ -23,18 +24,18 @@ class Register: KeyboardViewController, UITextFieldDelegate {
     
     
     //arthur_background aleatorio
-    func randomImages () -> String {
-        
-        let unsignedArrayCount = UInt32(images.count)
-        let unsignedRandomNumber = arc4random_uniform(unsignedArrayCount)
-        var randomNumber = Int(unsignedRandomNumber)
-        
-        repeat {
-            randomNumber = Int(unsignedRandomNumber)
-        } while randomNumber == previousRandomIndex
-        
-        return images[randomNumber]
-    }
+//    func randomImages () -> String {
+//        
+//        let unsignedArrayCount = UInt32(images.count)
+//        let unsignedRandomNumber = arc4random_uniform(unsignedArrayCount)
+//        var randomNumber = Int(unsignedRandomNumber)
+//        
+//        repeat {
+//            randomNumber = Int(unsignedRandomNumber)
+//        } while randomNumber == previousRandomIndex
+//        
+//        return images[randomNumber]
+//    }
     
     
     
@@ -118,6 +119,7 @@ class Register: KeyboardViewController, UITextFieldDelegate {
         } else if isValidPassword(password.text!) == true {
             
             user = User(name: name.text!, email: email.text!, password: password.text!)
+//            userreg = Pessoa(nome: name.text!, email: email.text!, senha: password.text!)
             performSegueWithIdentifier("registerCompleted", sender: self)
             
             
@@ -136,6 +138,7 @@ class Register: KeyboardViewController, UITextFieldDelegate {
         
         if segue.identifier == "registerCompleted" {
             let destination:Login=segue.destinationViewController as! Login
+//            listaPessoas.append(userreg)
             destination.user2 = user
         }
     }
