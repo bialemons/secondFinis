@@ -25,11 +25,12 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
     @IBOutlet weak var addGoal: UITextField!
     @IBOutlet weak var insertGoal: UITextField!
     @IBOutlet weak var imageView: UIImageView!
+
     
-   
+    
+//variaveis ncessarias para a construcao do calendario
+    var dateLabel: UILabel!
     var dateLabelContainer: UIView!
-    
-    
 
     //var tasks
      var toDoItems = [ToDoItem]()
@@ -57,6 +58,18 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        dateLabel.font = dateLabel.font.fontWithSize(14)
+        self.ScrollView.addSubview(dateLabel)
+        dateLabel.text = "aeeeeeeee"
+        
+        
+
+        
+        
+        
+        
+        
+        
         tag.hidden = true
         insertGoal.hidden = true
         addGoal.textColor = UIColor.clearColor()
@@ -66,17 +79,6 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor(red: 78.0/255, green: 205.0/255, blue: 196.0/255, alpha: 1.0)]
         
         self.tableView.reloadData()
-        
-        
-        let dateLabel = UILabel(frame:CGRectMake(self.view.frame.size.width - 100, 60, 100, 50))
-        dateLabel.textAlignment = NSTextAlignment.Center
-        dateLabel.text = "TEXTO"
-        //        dateLabel.font = UIFont(name: , size: 40)
-        dateLabel.textColor = UIColor.blackColor()
-        self.view.addSubview(dateLabel)
-
-        print(dateLabel.frame)
-
         
         self.view.bringSubviewToFront(dateLabel)
         
