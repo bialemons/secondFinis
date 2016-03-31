@@ -17,6 +17,10 @@
 		541FFAAB1CA45755000D1B79 /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 541FFAA31CA45755000D1B79 /* Montserrat-SemiBold.otf */; };
 		541FFAAC1CA45755000D1B79 /* Montserrat-UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 541FFAA41CA45755000D1B79 /* Montserrat-UltraLight.otf */; };
 		545C7D341CAAFC7100281CAB /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545C7D331CAAFC7100281CAB /* CollectionViewCell.swift */; };
+		547B7BE01CADA7B3000A3340 /* NSDate+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 547B7BD91CADA7B3000A3340 /* NSDate+CL.m */; };
+		547B7BE11CADA7B3000A3340 /* NSDictionary+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 547B7BDB1CADA7B3000A3340 /* NSDictionary+CL.m */; };
+		547B7BE21CADA7B3000A3340 /* UIColor+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 547B7BDD1CADA7B3000A3340 /* UIColor+CL.m */; };
+		547B7BE31CADA7B3000A3340 /* UIImage+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 547B7BDF1CADA7B3000A3340 /* UIImage+CL.m */; };
 		548C24C31CA9E23A00AE8645 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548C24C21CA9E23A00AE8645 /* Calendar.swift */; };
 		54A0BD891CA6396000DBC838 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A0BD881CA6396000DBC838 /* Assets.xcassets */; };
 		565029D51CA8023E00EDF053 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565029D41CA8023E00EDF053 /* Profile.swift */; };
@@ -44,6 +48,15 @@
 		541FFAA31CA45755000D1B79 /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
 		541FFAA41CA45755000D1B79 /* Montserrat-UltraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-UltraLight.otf"; sourceTree = "<group>"; };
 		545C7D331CAAFC7100281CAB /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		547B7BD41CADA754000A3340 /* Finis-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Finis-Bridging-Header.h"; sourceTree = "<group>"; };
+		547B7BD81CADA7B3000A3340 /* NSDate+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CL.h"; sourceTree = "<group>"; };
+		547B7BD91CADA7B3000A3340 /* NSDate+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CL.m"; sourceTree = "<group>"; };
+		547B7BDA1CADA7B3000A3340 /* NSDictionary+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CL.h"; sourceTree = "<group>"; };
+		547B7BDB1CADA7B3000A3340 /* NSDictionary+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CL.m"; sourceTree = "<group>"; };
+		547B7BDC1CADA7B3000A3340 /* UIColor+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CL.h"; sourceTree = "<group>"; };
+		547B7BDD1CADA7B3000A3340 /* UIColor+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CL.m"; sourceTree = "<group>"; };
+		547B7BDE1CADA7B3000A3340 /* UIImage+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CL.h"; sourceTree = "<group>"; };
+		547B7BDF1CADA7B3000A3340 /* UIImage+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CL.m"; sourceTree = "<group>"; };
 		548C24C21CA9E23A00AE8645 /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		54A0BD881CA6396000DBC838 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		565029D41CA8023E00EDF053 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
@@ -86,6 +99,21 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
+		547B7BD71CADA76E000A3340 /* Objective C */ = {
+			isa = PBXGroup;
+			children = (
+				547B7BD81CADA7B3000A3340 /* NSDate+CL.h */,
+				547B7BD91CADA7B3000A3340 /* NSDate+CL.m */,
+				547B7BDA1CADA7B3000A3340 /* NSDictionary+CL.h */,
+				547B7BDB1CADA7B3000A3340 /* NSDictionary+CL.m */,
+				547B7BDC1CADA7B3000A3340 /* UIColor+CL.h */,
+				547B7BDD1CADA7B3000A3340 /* UIColor+CL.m */,
+				547B7BDE1CADA7B3000A3340 /* UIImage+CL.h */,
+				547B7BDF1CADA7B3000A3340 /* UIImage+CL.m */,
+			);
+			name = "Objective C";
+			sourceTree = "<group>";
+		};
 		56F6E85F1CA05ED00093477E = {
 			isa = PBXGroup;
 			children = (
@@ -105,7 +133,9 @@
 		56F6E86A1CA05ED00093477E /* Finis */ = {
 			isa = PBXGroup;
 			children = (
+				547B7BD71CADA76E000A3340 /* Objective C */,
 				246566C61CA4921B003BECE4 /* Fonts */,
+				547B7BD41CADA754000A3340 /* Finis-Bridging-Header.h */,
 				56F6E86B1CA05ED00093477E /* AppDelegate.swift */,
 				56F6E86F1CA05ED00093477E /* Main.storyboard */,
 				56F6E8741CA05ED00093477E /* LaunchScreen.storyboard */,
@@ -213,15 +243,19 @@
 				56F6E88E1CA30E9A0093477E /* TheLastViewController.swift in Sources */,
 				56F6E8821CA09FBD0093477E /* StartScreen.swift in Sources */,
 				56F6E8841CA0A00E0093477E /* Login.swift in Sources */,
+				547B7BE31CADA7B3000A3340 /* UIImage+CL.m in Sources */,
 				56BA774C1CA927E200DA7D8F /* TableViewCell.swift in Sources */,
 				5412AA7F1CA9C323000E520E /* Reschedule.swift in Sources */,
 				24E1901B1CA9BBC2004E81A5 /* KeyboardViewController.swift in Sources */,
+				547B7BE11CADA7B3000A3340 /* NSDictionary+CL.m in Sources */,
+				547B7BE21CADA7B3000A3340 /* UIColor+CL.m in Sources */,
 				56F6E8801CA084DA0093477E /* Register.swift in Sources */,
 				545C7D341CAAFC7100281CAB /* CollectionViewCell.swift in Sources */,
 				56F6E87E1CA082860093477E /* User.swift in Sources */,
 				5412AA7D1CA9C04E000E520E /* Task.swift in Sources */,
 				565029D51CA8023E00EDF053 /* Profile.swift in Sources */,
 				56BA789C1CAC913900DA7D8F /* ToDoItem.swift in Sources */,
+				547B7BE01CADA7B3000A3340 /* NSDate+CL.m in Sources */,
 				548C24C31CA9E23A00AE8645 /* Calendar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,10 +369,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Finis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "PUC-Rio.Finis";
 				PRODUCT_NAME = Finis;
+				SWIFT_OBJC_BRIDGING_HEADER = "Finis/Finis-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,10 +383,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Finis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "PUC-Rio.Finis";
 				PRODUCT_NAME = Finis;
+				SWIFT_OBJC_BRIDGING_HEADER = "Finis/Finis-Bridging-Header.h";
 			};
 			name = Release;
 		};
