@@ -17,6 +17,9 @@
 		541FFAAB1CA45755000D1B79 /* Montserrat-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 541FFAA31CA45755000D1B79 /* Montserrat-SemiBold.otf */; };
 		541FFAAC1CA45755000D1B79 /* Montserrat-UltraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 541FFAA41CA45755000D1B79 /* Montserrat-UltraLight.otf */; };
 		545C7D341CAAFC7100281CAB /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545C7D331CAAFC7100281CAB /* CollectionViewCell.swift */; };
+		545ED2D61CADBCF200C4556F /* DailyCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 545ED2D31CADBCF200C4556F /* DailyCalendarView.m */; };
+		545ED2D71CADBCF200C4556F /* DayTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 545ED2D51CADBCF200C4556F /* DayTitleLabel.m */; };
+		545ED2DA1CADBE4C00C4556F /* CLWeeklyCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 545ED2D91CADBE4C00C4556F /* CLWeeklyCalendarView.m */; };
 		547B7BE01CADA7B3000A3340 /* NSDate+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 547B7BD91CADA7B3000A3340 /* NSDate+CL.m */; };
 		547B7BE11CADA7B3000A3340 /* NSDictionary+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 547B7BDB1CADA7B3000A3340 /* NSDictionary+CL.m */; };
 		547B7BE21CADA7B3000A3340 /* UIColor+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 547B7BDD1CADA7B3000A3340 /* UIColor+CL.m */; };
@@ -48,6 +51,12 @@
 		541FFAA31CA45755000D1B79 /* Montserrat-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.otf"; sourceTree = "<group>"; };
 		541FFAA41CA45755000D1B79 /* Montserrat-UltraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-UltraLight.otf"; sourceTree = "<group>"; };
 		545C7D331CAAFC7100281CAB /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		545ED2D21CADBCF200C4556F /* DailyCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyCalendarView.h; sourceTree = "<group>"; };
+		545ED2D31CADBCF200C4556F /* DailyCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyCalendarView.m; sourceTree = "<group>"; };
+		545ED2D41CADBCF200C4556F /* DayTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayTitleLabel.h; sourceTree = "<group>"; };
+		545ED2D51CADBCF200C4556F /* DayTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayTitleLabel.m; sourceTree = "<group>"; };
+		545ED2D81CADBE4C00C4556F /* CLWeeklyCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLWeeklyCalendarView.h; sourceTree = "<group>"; };
+		545ED2D91CADBE4C00C4556F /* CLWeeklyCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLWeeklyCalendarView.m; sourceTree = "<group>"; };
 		547B7BD41CADA754000A3340 /* Finis-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Finis-Bridging-Header.h"; sourceTree = "<group>"; };
 		547B7BD81CADA7B3000A3340 /* NSDate+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CL.h"; sourceTree = "<group>"; };
 		547B7BD91CADA7B3000A3340 /* NSDate+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CL.m"; sourceTree = "<group>"; };
@@ -99,6 +108,30 @@
 			name = Fonts;
 			sourceTree = "<group>";
 		};
+		545ED2DB1CADBE6B00C4556F /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				547B7BD41CADA754000A3340 /* Finis-Bridging-Header.h */,
+				56F6E86B1CA05ED00093477E /* AppDelegate.swift */,
+				548C24C21CA9E23A00AE8645 /* Calendar.swift */,
+				5412AA7E1CA9C323000E520E /* Reschedule.swift */,
+				56F6E87D1CA082860093477E /* User.swift */,
+				5412AA7C1CA9C04E000E520E /* Task.swift */,
+				56F6E87F1CA084DA0093477E /* Register.swift */,
+				56F6E8811CA09FBD0093477E /* StartScreen.swift */,
+				56F6E8831CA0A00E0093477E /* Login.swift */,
+				56F6E8891CA30C0D0093477E /* ViewController.swift */,
+				56F6E88D1CA30E9A0093477E /* TheLastViewController.swift */,
+				565029D41CA8023E00EDF053 /* Profile.swift */,
+				56BA77471CA9048200DA7D8F /* Item.swift */,
+				56BA774B1CA927E200DA7D8F /* TableViewCell.swift */,
+				24E1901A1CA9BBC2004E81A5 /* KeyboardViewController.swift */,
+				545C7D331CAAFC7100281CAB /* CollectionViewCell.swift */,
+				56BA789B1CAC913900DA7D8F /* ToDoItem.swift */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
 		547B7BD71CADA76E000A3340 /* Objective C */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +143,12 @@
 				547B7BDD1CADA7B3000A3340 /* UIColor+CL.m */,
 				547B7BDE1CADA7B3000A3340 /* UIImage+CL.h */,
 				547B7BDF1CADA7B3000A3340 /* UIImage+CL.m */,
+				545ED2D21CADBCF200C4556F /* DailyCalendarView.h */,
+				545ED2D31CADBCF200C4556F /* DailyCalendarView.m */,
+				545ED2D41CADBCF200C4556F /* DayTitleLabel.h */,
+				545ED2D51CADBCF200C4556F /* DayTitleLabel.m */,
+				545ED2D81CADBE4C00C4556F /* CLWeeklyCalendarView.h */,
+				545ED2D91CADBE4C00C4556F /* CLWeeklyCalendarView.m */,
 			);
 			name = "Objective C";
 			sourceTree = "<group>";
@@ -145,25 +184,9 @@
 				547B7BD71CADA76E000A3340 /* Objective C */,
 				246566C61CA4921B003BECE4 /* Fonts */,
 				547B7BE41CADABC3000A3340 /* Storyboards */,
-				547B7BD41CADA754000A3340 /* Finis-Bridging-Header.h */,
-				56F6E86B1CA05ED00093477E /* AppDelegate.swift */,
-				548C24C21CA9E23A00AE8645 /* Calendar.swift */,
-				56F6E8771CA05ED00093477E /* Info.plist */,
-				5412AA7E1CA9C323000E520E /* Reschedule.swift */,
-				56F6E87D1CA082860093477E /* User.swift */,
-				5412AA7C1CA9C04E000E520E /* Task.swift */,
-				56F6E87F1CA084DA0093477E /* Register.swift */,
-				56F6E8811CA09FBD0093477E /* StartScreen.swift */,
-				56F6E8831CA0A00E0093477E /* Login.swift */,
-				56F6E8891CA30C0D0093477E /* ViewController.swift */,
-				56F6E88D1CA30E9A0093477E /* TheLastViewController.swift */,
-				565029D41CA8023E00EDF053 /* Profile.swift */,
-				56BA77471CA9048200DA7D8F /* Item.swift */,
-				56BA774B1CA927E200DA7D8F /* TableViewCell.swift */,
-				24E1901A1CA9BBC2004E81A5 /* KeyboardViewController.swift */,
-				545C7D331CAAFC7100281CAB /* CollectionViewCell.swift */,
+				545ED2DB1CADBE6B00C4556F /* Swift */,
 				54A0BD881CA6396000DBC838 /* Assets.xcassets */,
-				56BA789B1CAC913900DA7D8F /* ToDoItem.swift */,
+				56F6E8771CA05ED00093477E /* Info.plist */,
 			);
 			path = Finis;
 			sourceTree = "<group>";
@@ -245,10 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				545ED2DA1CADBE4C00C4556F /* CLWeeklyCalendarView.m in Sources */,
 				56BA77481CA9048200DA7D8F /* Item.swift in Sources */,
 				56F6E88A1CA30C0D0093477E /* ViewController.swift in Sources */,
 				56F6E86C1CA05ED00093477E /* AppDelegate.swift in Sources */,
 				56F6E88E1CA30E9A0093477E /* TheLastViewController.swift in Sources */,
+				545ED2D71CADBCF200C4556F /* DayTitleLabel.m in Sources */,
 				56F6E8821CA09FBD0093477E /* StartScreen.swift in Sources */,
 				56F6E8841CA0A00E0093477E /* Login.swift in Sources */,
 				547B7BE31CADA7B3000A3340 /* UIImage+CL.m in Sources */,
@@ -256,6 +281,7 @@
 				5412AA7F1CA9C323000E520E /* Reschedule.swift in Sources */,
 				24E1901B1CA9BBC2004E81A5 /* KeyboardViewController.swift in Sources */,
 				547B7BE11CADA7B3000A3340 /* NSDictionary+CL.m in Sources */,
+				545ED2D61CADBCF200C4556F /* DailyCalendarView.m in Sources */,
 				547B7BE21CADA7B3000A3340 /* UIColor+CL.m in Sources */,
 				56F6E8801CA084DA0093477E /* Register.swift in Sources */,
 				545C7D341CAAFC7100281CAB /* CollectionViewCell.swift in Sources */,

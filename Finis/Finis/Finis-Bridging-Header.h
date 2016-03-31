@@ -6,3 +6,6 @@
 #import "NSDictionary+Cl.h"
 #import "UIColor+CL.h"
 #import "UIImage+CL.h"
+#import "DailyCalendarView.h"
+#import "DayTitleLabel.h"
+#import "CLWeeklyCalendarView.h"

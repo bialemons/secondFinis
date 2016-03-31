@@ -58,14 +58,6 @@ class StartScreen: KeyboardViewController, UITextFieldDelegate, UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        dateLabel.font = dateLabel.font.fontWithSize(14)
-        self.ScrollView.addSubview(dateLabel)
-        dateLabel.text = "aeeeeeeee"
-        
-        
-
-        
-        
         
         
         
