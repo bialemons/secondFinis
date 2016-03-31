@@ -46,6 +46,8 @@ class TableViewCell: UITableViewCell {
     //MARK: - horizontal pan gesture methods
     func handlePan(recognizer: UIPanGestureRecognizer) {
         
+        
+        
         // 1
         if recognizer.state == .Began {
             // when the gesture begins, record the current center location
@@ -59,14 +61,29 @@ class TableViewCell: UITableViewCell {
             // has the user dragged the item far enough to initiate a delete/complete?
             deleteOnDragRelease = frame.origin.x < -frame.size.width / 4.0
             completeOnDragRelease = frame.origin.x > frame.size.width / 4.0
+            //            if frame.origin.x < -frame.size.width / 2.0{
+            //                print("esquerdo")
+            //            }
+            //            else {
+            //                print("direito")
+            //            }
+            //            print(deleteOnDragRelease)
+            //            print(completeOnDragRelease)
         }
         
         // 3
         if recognizer.state == .Ended {
             // the frame this cell had before user dragged it
             let originalFrame = CGRect(x: 0, y: frame.origin.y,
-                width: bounds.size.width, height: bounds.size.height)
+                                       width: bounds.size.width, height: bounds.size.height)
             if !deleteOnDragRelease {
+                //
+                //                UIView.animateWithDuration(1.0, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: .CurveEaseOut, animations: {
+                //
+                //                    titleLabel.frame =
+                //
+                //                    }, completion: nil)
+                //
                 print("direita")
                 
                 //UIView.animateWithDuration(0.2, animations: {self.frame = originalFrame})
